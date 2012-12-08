@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load menu_tags cms_tags sekizai_tags %}
 {% block content %}
     <!-- coming soon -->
     <div id="comingsoon" class="comingsoon_page">
@@ -6,12 +7,13 @@
             <div class="countdown">
                 <div class="row">
                     <div class="span6 offset1 left">
-                        <h1>We are launching very soon...</h1>
-
-                        <p>
-                            There are many variations of passages of Lorem Ipsum available, but the majority have
-                            suffered alteration in some form, by injected humour, or randomised words.
-                        </p>
+                        <h1>{{ request.current_page.get_title }}</h1>
+                            {% placeholder "content" or %}
+                            <p>
+                                There are many variations of passages of Lorem Ipsum available, but the majority
+                                have suffered alteration in some form, by injected humour, or randomised words.
+                            </p>
+                            {% endplaceholder %}
                     </div>
                     <div id="timer" class="span5 right">
                         <div class="figure">
@@ -71,4 +73,14 @@
             </div>
         </div>
     </div>
+    <!-- Set your launch date below -->
+    <script>
+        jQuery(document).ready(function($) {
+            CreateTimer("timer", {
+                year: 2013,
+                month: 1,
+                day: 1
+            });
+        });
+    </script>
 {% endblock %}
