@@ -14,7 +14,7 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-LANGUAGES = [('en', 'English'), ('de', 'German'), ('ru', 'Russian')]
+LANGUAGES = [('en', 'English'), ('de', gettext('German')), ('ru', gettext('Russian'))]
 DEFAULT_LANGUAGE = 0
 
 DATABASES = {
