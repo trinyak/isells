@@ -14,7 +14,7 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-LANGUAGES = [('en', 'en')]
+LANGUAGES = [('en', 'English'), ('de', 'German'), ('ru', 'Russian')]
 DEFAULT_LANGUAGE = 0
 
 DATABASES = {
@@ -101,6 +101,8 @@ CMS_TEMPLATES = (
     ('coming-soon.html', 'Coming soon'),
     )
 
+CMS_HIDE_UNTRANSLATED = True
+
 ROOT_URLCONF = 'core.urls'
 
 TEMPLATE_DIRS = (
@@ -115,6 +117,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.admin',
     'django.contrib.staticfiles',
+    'django.contrib.sitemaps',
     'cms',
     'menus',
     'mptt',
