@@ -99,6 +99,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 CMS_TEMPLATES = (
     ('base.html', 'Example Template'),
     ('coming-soon.html', 'Coming soon'),
+    ('pricing.html', 'Pricing'),
     )
 
 CMS_HIDE_UNTRANSLATED = True
