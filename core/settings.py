@@ -100,6 +100,7 @@ CMS_TEMPLATES = (
     ('base.html', 'Example Template'),
     ('coming-soon.html', 'Coming soon'),
     ('pricing.html', 'Pricing'),
+    ('contact-us.html', 'Contact us'),
     )
 
 CMS_HIDE_UNTRANSLATED = True
