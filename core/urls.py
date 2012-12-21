@@ -1,13 +1,13 @@
 from django.conf.urls import patterns, include, url
-from django.conf import settings
-# Uncomment the next two lines to enable the admin:
 from django.contrib import admin
 from cms.sitemaps import CMSSitemap
+from registration.forms import RegistrationFormUniqueEmail
 admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': {'cmspages': CMSSitemap}}),
+    url(r'^accounts/', include('registration.backends.simple.urls')),
     url(r'^', include('cms.urls')),
 )
 

@@ -131,5 +131,8 @@ INSTALLED_APPS = (
     'cms.plugins.snippet',
     'cms.plugins.googlemap',
     'sekizai',
-    'theme'
+    'theme',
+    'registration'
     )
+
+REGISTRATION_OPEN = True

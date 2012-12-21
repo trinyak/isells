@@ -8,3 +8,4 @@ PIL
 django-debug-toolbar
 django-bootstrap-toolkit
 pytils
+django-registration
