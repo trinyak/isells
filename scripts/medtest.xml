@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE yml_catalog SYSTEM "shops.dtd">
+<yml_catalog date="2012-07-18 10:05">
+<shop>
+<name>realmart</name>
+<company>realmart</company>
+<url>http://realmart.com.ua</url>
+<platform>Aqua-CMS</platform>
+<version>1.9</version>
+<agency><![CDATA[ООО «Аква-вебстудио»]]></agency>
+<email>info@aquaweb.com.ua</email>
+<currencies>
+    <currency id="UAH" rate="1"/>
+</currencies>
+<categories>
+    <category id="3" parentId="75">Гинекологические тесты</category>
+    <category id="4" parentId="75">Инфекционные заболевания</category>
+    <category id="73" parentId="75">Онкомаркеры</category>
+    <category id="74" parentId="0">Холестерол</category>
+    <category id="75" parentId="0">Экспресс-тесты</category>
+    <category id="76" parentId="0">Специальное предложение</category>
+    <category id="78" parentId="77">Светоотверждаемые реставрационные композитные материалы</category>
+    <category id="79" parentId="77">Прокладочные стеклоиономерные материалы</category>
+    <category id="82" parentId="77">Адгезивные системы</category>
+    <category id="83" parentId="77">Временные пломбировочные материалы</category>
+    <category id="84" parentId="77">Препараты для профилактики</category>
+    <category id="86" parentId="0">Експрес-тести</category>
+    <category id="87" parentId="86">Гінекологічні тести</category>
+    <category id="88" parentId="86">Інфекційні тести</category>
+    <category id="89" parentId="0">Спеціальна пропозиція</category>
+    <category id="90" parentId="86">Онкомаркери</category>
+    <category id="94" parentId="75">Кардиомаркеры</category>
+    <category id="95" parentId="86">Кардіомаркери</category>
+    <category id="96" parentId="75">Наркотические вещества</category>
+    <category id="97" parentId="86">Наркотичні речовини</category>
+    <category id="98" parentId="0">Овуляция Biomerica</category>
+    <category id="99" parentId="0">Тесты для лабораторий</category>
+    <category id="100" parentId="99">Инфекционные заболевания</category>
+    <category id="101" parentId="99">Паразитарные заболевания</category>
+    <category id="102" parentId="0">Аллергические тесты</category>
+    <category id="103" parentId="75">ЗППП</category>
+    <category id="104" parentId="86">ЗПСШ</category>
+    <category id="106" parentId="75">Биохимические тесты</category>
+    <category id="107" parentId="0">Отбеливание зубов</category>
+
+</categories>
+<offers>
+<offer id="8" available="true">
+    <price>148</price>
+    <currencyId>UAH</currencyId>
+    <categoryId>0</categoryId>
+    <picture>http://medtest.com.ua/file/1334</picture>
+    <name><![CDATA[Специфический антиген простаты (PSA)]]></name>
+    <vendorCode><![CDATA[PSA]]></vendorCode>
+    <description><![CDATA[<p align="justify">&nbsp;Можно ли обнаружить <strong><em><font color="#0b4986">рак простаты</font></em></strong> на ранних стадиях? Одним из надежных маркеров при <strong><em><font color="#0b4986">раке простаты</font></em></strong> на ранних стадиях его диагностики является <strong><em><font color="#0b4986">простато-специфический антиген (PSA)</font></em></strong>. Этот тест основан на определении опухолевых маркеров, которые продуцируются опухолевыми клетками или организмом в ответ на развитие опухоли. <strong><em><font color="#0b4986">Экспресс-тест</font></em></strong> имеет высокую чувствительность и специфичность, низкую частоту ложно-положительных и ложно-отрицательных результатов, высокое прогностическое значение. Для того, чтобы у Вас был шанс выявления <strong><em><font color="#0b4986">рака простаты</font></em></strong> на еще излечимой&nbsp; стадии, когда опухоль нааходится тольков в ткани простаты, необходимо регулярно проходить профилактическое обследование.</p>
+<p align="justify">Главное запомнить! Как только Вам исполнилось 50 лет,&nbsp;и если у Вас в роду имелись больные <strong><em><font color="#0b4986">раком простаты</font></em></strong>, то после&nbsp;45 лет необходимо ежегодно проходить профилактическое обследование.</p>
+<p>Пожалуйста читайте <a href="http://medtest.com.ua/read/test_na_antigen_prostaty">инструкции для использования </a></p>
+<p><a href="http://medtest.com.ua/read/spetsificheskij_antigen_prostaty_prostate">Читайте больше о простате, PSA и тесте</a> </p>]]></description>
+</offer>
+<offer id="108" available="true">
+    <price>66</price>
+    <currencyId>UAH</currencyId>
+    <categoryId>0</categoryId>
+    <picture>http://medtest.com.ua/file/6311</picture>
+    <name><![CDATA[Jen-Paragon LC (Jendental)]]></name>
+    <vendorCode><![CDATA[]]></vendorCode>
+    <description><![CDATA[Фотополимерный композит для моляров]]></description>
+</offer>
+<offer id="109" available="true">
+    <price>571.7</price>
+    <currencyId>UAH</currencyId>
+    <categoryId>0</categoryId>
+    <picture>http://medtest.com.ua/file/6312</picture>
+    <name><![CDATA[Vitrebond (3M ESPE)]]></name>
+    <vendorCode><![CDATA[]]></vendorCode>
+    <description><![CDATA[<p><em><font color="#003366">Стеклоиономерный прокладочный материал светового отверждения.</font></em> </p>
+<p>Система: порошок / жидкость. </p>
+<p><em><font color="#003366">Назначение:</font></em> </p>
+<p>Лайнерная прокладка под прямые реставрации и вкладки из композитов, амальгам, металлов и керамики. </p>
+<p><em><font color="#003366">Преимущества:</font></em> </p>
+<p>Двойной механизм полимеризации: фотополимеризация, стеклоиономерная реакция. Активное пролонгированное выделение фтора. Отличное краевое прилегание. Прочная химическая связь с дентином (в т.ч. патологически изменённым). Высокая биосовместимость. Рентгеноконтрастность. </p>
+<p><em><font color="#003366">Инструкции по использованию:</font></em> </p>
+<p>Перед дозированием встряхните ёмкость с порошком. После дозирования плотно закройте обе ёмкости. Используя порошок и жидкость замешайте материал нужной консистенции.</p>]]></description>
+</offer>
+<offer id="107" available="true">
+    <price>92</price>
+    <currencyId>UAH</currencyId>
+    <categoryId>0</categoryId>
+    <picture>http://medtest.com.ua/file/6310</picture>
+    <name><![CDATA[Amelogen Plus (Ultradent)]]></name>
+    <vendorCode><![CDATA[]]></vendorCode>
+    <description><![CDATA[<p><font color="#003366"><em>Композитный реставрационный материал</em></font> </p>
+<p>Исключительные мануальные свойства и полируемость. Универсальное применение (на фронтальных и жевательных участках зубов). Логичная, интуитивно понятная система выбора оттенков. </p>
+<p>Размер частиц наполнителя - 0.7 мкм. Наполнение - 76 % (по весу). Наличие 14 оттенков. Возможность качественной и эстетической реставрации.</p>]]></description>
+</offer>
+<offer id="106" available="true">
+    <price>270</price>
+    <currencyId>UAH</currencyId>
+    <categoryId>0</categoryId>
+    <picture>http://medtest.com.ua/file/6309</picture>
+    <name><![CDATA[Admira (VOCO)]]></name>
+    <vendorCode><![CDATA[]]></vendorCode>
+    <description><![CDATA[<p><font color="#003366"><em>Светоотверждаемый пломбировочный материал на основе ормокеров</em> (<strong><em>Ormocer</em></strong>)</font> </p>
+<p align="justify"><font color="#003366"><em>Показания:</em></font> </p>
+<p align="justify">-Для дефектов всех классов -Реконструкция травмированных передних зубов -Oблицовка измененных в цвете передних зубов -Коррекция формы и цвета для придания зубам эстетического вида -Наложение шин на зубы -Починка фасеток -Mоделирование культей -Непрямые вкладки</p>
+<p align="justify"><font color="#003366"><em>Преимущества:</em></font> </p>
+<p>-Отличные косметические качества в 16 цвeтax -Высокая биосовместимость -Проверено годами -Не липкий, легко моделируется, надежное краевое прилегание пломбы -Более низкая усадка чем у обычных композиционных материалов -Выдерживает температурный режим, обычный для зубов -Отличное срастание с дентином и эмалью при помощи Admira Bond -Стойкий к стиранию и обеспечивает стабильные цвета -Идеален для любых повреждений зубов</p>]]></description>
+</offer>
+<offer id="105" available="true">
+    <price>372.6</price>
+    <currencyId>UAH</currencyId>
+    <categoryId>0</categoryId>
+    <picture>http://medtest.com.ua/file/6359</picture>
+    <name><![CDATA[Filtek Supreme XT (3M ESPE)]]></name>
+    <vendorCode><![CDATA[]]></vendorCode>
+    <description><![CDATA[<p><em><font color="#003366">Высокоэстетичный универсальный нанокомпозитный пломбировочный материал.</font></em> </p>
+<p>Filtek™ Supreme дает Вам возможность стать экспертом в области эстетической реставрации зубов. </p>
+<p><em><font color="#003366">Назначение:</font></em> </p>
+<p>Художественное восстановление фронтальных и жевательных зубов; Изготовление вкладок и накладок; Надстройка культи; Прямые и лабораторные виниры; Шинирование. </p>
+<p><em><font color="#003366">Преимущества:</font></em> </p>
+<p>Новый вид наполнителя – наночастицы и нанокластеры; Подходит для любых зубов; Возможность выполнения многослойных реставраций; Стойкий блеск; Высокая износоустойчивость и прочность; Низкая усадка; Удобство работы; Эффект хамелеона; Естественные цвета; Шкала-калькулятор для точного подбора оттенков; 4 степени опаковости; 30 оттенков.</p>]]></description>
+</offer>
+<offer id="110" available="true">
+    <price>260</price>
+    <currencyId>UAH</currencyId>
+    <categoryId>0</categoryId>
+    <picture>http://medtest.com.ua/file/6313</picture>
+    <name><![CDATA[Ionoseal (VOCO)]]></name>
+    <vendorCode><![CDATA[]]></vendorCode>
+    <description><![CDATA[<p><em><font color="#003366">Светотвердеваемый ренгеноконтрастный однокомпонентный стекло-иономерный композитный цемент для прокладок и др.</font></em> </p>
+<p>Позволяет экономить время и материал, так как наносится прямо из шприца на зубную поверхность. Не требует перемешивания, которое связано с затратами времени, попаданием воздуха и т.д. Быстро и хорошо полимеризуется с помощью галогеновой лампы. Отвердение происходит в течение 20 секунд (2мм). Благодаря содержанию стеклоиономерного цемента Ионосил выделяет фтор, который предупреждает развитие вторичного кариеса. Высокая прочность позволяет делать прокладки, обладающие большой степенью стойкости.</p>]]></description>
+</offer>
+<offer id="111" available="true">
+    <price>164</price>
+    <currencyId>UAH</currencyId>
+    <categoryId>0</categoryId>
+    <picture>http://medtest.com.ua/file/6339</picture>
+    <name><![CDATA[Jen-Fill (Jendental)]]></name>
+    <vendorCode><![CDATA[]]></vendorCode>
+    <description><![CDATA[<p><em><font color="#003366">Cтеклоиономерный многоцелевой цемент химического отверждения, обладающий высокой адгезией к эмали и дентину</font></em> </p>
+<p><em><font color="#003366">Назначение:</font></em> </p>
+<p>Реставрация молочных зубов (особенно с полостями I класса). Пломбировка полостей III класса и небольших полостей I класса (включая запечатывание фиссур). Наращивание и восстановление зуба под коронку. Использование в качестве прокладки. Устранение клиновидных дефектов, эрозии эмали и корневых каналов в пришеечной области, включая полости V класса. Цементирование штифтов и ортодонтических аппаратов. </p>
+<p><em><font color="#003366">Преимущества:</font></em> </p>
+<p>Стеклоиономерный многоцелевой цемент. Обладает превосходной адгезией к эмали и дентину. Пролонгированное высвобождение ионов фтора. Обеспечивает краевую герметизацию и ретенцию. Предлагаемые оттенки: U - универсальный; Y - желтый; L - светлый.</p>]]></description>
+</offer>
+<offer id="112" available="true">
+    <price>125.4</price>
+    <currencyId>UAH</currencyId>
+    <categoryId>0</categoryId>
+    <picture>http://medtest.com.ua/file/6340</picture>
+    <name><![CDATA[Jen-Line (Jendental)]]></name>
+    <vendorCode><![CDATA[]]></vendorCode>
+    <description><![CDATA[<p><em><font color="#003366">Cтеклоиономерный прокладочный материал, обладающий отличной биосовместимостью и высокой адгезией к эмали и дентину</font></em> </p>
+<p><em><font color="#003366">Назначение:</font></em> </p>
+<p>Используется в качестве прокладки для полостей под композиты и амальгаму. Силер для фиссур. Устранение клиновидных дефектов. </p>
+<p><em><font color="#003366">Преимущества:</font></em> </p>
+<p>Рентгеноконтрастный стеклоиономерный прокладочный цемент под композиты и амальгаму. Обладает превосходной адгезией к эмали и дентину. Обладает отличной биосовместимостью. Имеет малое время отверждения. Может применяться для запечатывания фиссур. Протравливается одновременно с протравливанием эмали.</p>]]></description>
+</offer>
+<offer id="113" available="true">
+    <price>99.6</price>
+    <currencyId>UAH</currencyId>
+    <categoryId>0</categoryId>
+    <picture>http://medtest.com.ua/file/6341</picture>
+    <name><![CDATA[Cavit-G (3M ESPE)]]></name>
+    <vendorCode><![CDATA[]]></vendorCode>
+    <description><![CDATA[<p><em><font color="#003366">Назначение:</font></em></p>
+<p>Используется для временного пломбирования перед постановкой вкладки. </p>
+<p><em><font color="#0b4986">Свойства и преимущества:</font></em> </p>
+<p>• Быстрое и качественное временное пломбирование. • Не содержит эвгенола. • Материал легко вносится и легко извлекается. • Возможность работы в условиях высокой влажности. • Небольшое увеличение объема (разбухание) пломбировочного материала обеспечивает плотное краевое прилегание. </p>
+<p><em><font color="#003366">Упаковка:</font></em> </p>
+<p>• баночка, 28 г </p>]]></description>
+</offer>
+<offer id="114" available="true">
+    <price>146</price>
+    <currencyId>UAH</currencyId>
+    <categoryId>0</categoryId>
+    <picture>http://medtest.com.ua/file/6342</picture>
+    <name><![CDATA[Clip (VOCO)]]></name>
+    <vendorCode><![CDATA[]]></vendorCode>
+    <description><![CDATA[<p><em><font color="#003366">Светоотверждаемый пломбировочный материал для временного пломбирования</font></em> </p>
+<p><em><font color="#003366">Показания:</font></em> </p>
+<p>Временное пломбирование. Временная изоляция полостей, особенно при изготовлении вкладок и накладок. </p>
+<p><em><font color="#003366">Преимущества:</font></em></p>
+<p>Легко накладывать и удалять. Cохраняет границы препарирования. Экономит время. Надежное краевое прилегание. Специально предназначен при изготовлении вкладок и накладок. </p>]]></description>
+</offer>
+<offer id="115" available="true">
+    <price>146</price>
+    <currencyId>UAH</currencyId>
+    <categoryId>0</categoryId>
+    <picture>http://medtest.com.ua/file/6343</picture>
+    <name><![CDATA[Clip F (VOCO)]]></name>
+    <vendorCode><![CDATA[]]></vendorCode>
+    <description><![CDATA[<p><em><font color="#0b4986">Светоотверждаемый пломбировочный материал для временного пломбирования</font></em> </p>
+<p><em><font color="#0b4986">Показания</font></em> </p>
+<p>Временное пломбирование. Временная изоляция полостей, особенно при изготовлении вкладок и накладок. </p>
+<p><em><font color="#0b4986">Преимущества </font></em></p>
+<p>Легко накладывать и удалять. Cохраняет границы препарирования. Экономит время. Надежное краевое прилегание. Специально предназначен при изготовлении вкладок и накладок. </p>]]></description>
+</offer>
+<offer id="116" available="true">
+    <price>64.6</price>
+    <currencyId>UAH</currencyId>
+    <categoryId>0</categoryId>
+    <picture>http://medtest.com.ua/file/6344</picture>
+    <name><![CDATA[Provi-Jen LC (Jendental)]]></name>
+    <vendorCode><![CDATA[]]></vendorCode>
+    <description><![CDATA[<p><em><font color="#003366">Светоотверждаемый материал для длительного временного пломбирования</font></em> </p>
+<p><em><font color="#003366">Назначение:</font></em> </p>
+<p>Временное пломбирование. Временная защита в технике вкладок и накладок. </p>
+<p><em><font color="#003366">Преимущества:</font></em> </p>
+<p>Светоотверждаемый материал для временных эстетичных реставраций и временного пломбирования, особенно при необходимости длительных временных реставраций. Не требует специальной препаровки полости. Облегчает и ускоряет процедуры. Не оставляет во рту привкуса &quot;стоматологического материала&quot;. Нерастворим в жидкостях ротовой полости.</p>]]></description>
+</offer>
+<offer id="117" available="true">
+    <price>11.5</price>
+    <currencyId>UAH</currencyId>
+    <categoryId>0</categoryId>
+    <picture>http://medtest.com.ua/file/6345</picture>
+    <name><![CDATA[Prompt L-POP (3M ESPE)]]></name>
+    <vendorCode><![CDATA[]]></vendorCode>
+    <description><![CDATA[<p><em><font color="#003366">Самопротравливающий адгезив VI поколения (&quot;всё в одном&quot;) в удобном блистере L-Pop</font></em> </p>
+<p><em><font color="#003366">Назначение:</font></em> </p>
+<p>Адгезив для композитных материалов, а также для компомеров. </p>
+<p><em><font color="#003366">Преимущества:</font></em> </p>
+<p>Контроль правильной активации адгезива. Отличная текучесть для лучшего покрытия адгезивом поверхности отпрепарированных твёрдых тканей зуба. Исключительная простота в пользовании блистером - сдавил - перегнул - сдавил - адгезив готов к использованию . Быстрое применение - втёр в течение 15 с - слегка просушил - засветил в течение 10 с. Высокое качество адгезии - превосходное модифицирование смазанного слоя дентина гарантирующее от возникновения постоперативной чувствительности; отличное протравливание эмали (без отдельного этапа протравливания). Высокая гигиеничность. Желтоватая окраска правильно активированного адгезива. </p>
+<p><em><font color="#003366">Инструкции по использованию:</font></em> </p>
+<p>Интенсивно и тщательно вотрите Adper™ Prompt™ L-Pop™ в отпрепарированную поверхность твёрдых тканей зуба в течение 15с. Просушите воздушным спреем. Фотополимеризуйте в течение 10 с.</p>]]></description>
+</offer>
+<offer id="118" available="true">
+    <price>336</price>
+    <currencyId>UAH</currencyId>
+    <categoryId>0</categoryId>
+    <picture>http://medtest.com.ua/file/6346</picture>
+    <name><![CDATA[Single Bond 2 (3M ESPE)]]></name>
+    <vendorCode><![CDATA[]]></vendorCode>
+    <description><![CDATA[<p><em><font color="#003366">Адгезивная система V поколения (однокомпонентная) с удобной крышечкой &quot;Easy Click&quot;</font></em> </p>
+<p><em><font color="#003366">Назначение:</font></em> </p>
+<p>Прямые реставрации фотокомпозитами. Починка композитных реставраций и металлокерамики. Фиксация конструкций на композитные цементы. Фиксация виниров. Лечение пришеечной гиперчувствительности. </p>
+<p><em><font color="#003366">Преимущества:</font></em> </p>
+<p>Фотополимеризуемый однокомпонентный адгезив. Отличная сила адгезии к эмали и дентину. Удобный флакон с крышечкой &quot;Easy Click&quot;. Быстрота применения. Легко контролировать остаток адгезива во флаконе. </p>
+<p><em><font color="#003366">Инструкции по использованию:</font></em> </p>
+<p>Нанесите протравочный гель на эмаль и дентин (наносите начиная с эмали) на 15 с, полноценно смойте и просушите полость слабой воздушной струёй или ватным шариком (Внимание! Не пересушивайте дентин.). Нанесите один за другим 2 слоя Adper™ Single Bond, а затем просушите до исчезновения ряби лёгкой воздушной струёй в течение 2-5 с Фотополимеризуйте в течение 10 с. Начинайте пломбирование!</p>]]></description>
+</offer>
+<offer id="119" available="true">
+    <price>100</price>
+    <currencyId>UAH</currencyId>
+    <categoryId>0</categoryId>
+    <picture>http://medtest.com.ua/file/6347</picture>
+    <name><![CDATA[Jen-Unibond BioActive (Jendental)]]></name>
+    <vendorCode><![CDATA[]]></vendorCode>
+    <description><![CDATA[<p><em><font color="#003366">Универсальный однокомпонентный биоактивный праймер-адгезив, обладающий превосходной адгезией к дентину и эмали</font></em> </p>
+<p><em><font color="#003366">Назначение:</font></em> </p>
+<p>Адгезивная система для композитных реставраций (включая текучие композиты). Адгезивный лак для полостей под амальгамные реставрации. Защитный лак для участков зубов с повышенной чувствительностью. </p>
+<p><em><font color="#003366">Преимущества:</font></em> </p>
+<p>Содержит биоактивное стекло и наночастицы диоксида кварца. Оказывает реминерализирующее воздействие с продолжительным выделением ионов фторида, кальция и фосфата. Высоконаполненный, содержит 40% наполнителя. Простая и быстрая техника нанесения. Универсальность - обеспечивает адгезию к дентину и эмали. Совместим со всеми светоотверждаемыми реставрационными материалами и цементами. Длительный срок годности, нет необходимости хранить в холодильнике. Экономичен в использовании. Отличная биосовместимость с зубной тканью. Не содержит составляющих, которые раздражают пульпу зуба (например, ацетон). Имеет один из самых высоких уровней адгезии среди однокомпонентных адгезивов. Сила адгезии Jen-Unibond (BIO) к протравленному дентину через 24 часа составляет 17-40 МРа (в зависимости от индивидуального лабораторного теста). Содержит натуральные смолы, увеличивающие эластичность полимеризованного адгезивного слоя. Уменьшает риск микроподтекания за счет большей сопротивляемости реставрации полимеризационному стрессу. Специальный сополимеризуемый растворитель в комбинации с небольшим количеством этилового спирта (в качестве носителя) решает проблему быстрого испарения избытка растворителя и одновременно обеспечивает проникновение смолы в дентинные канальцы.</p>]]></description>
+</offer>
+<offer id="120" available="true">
+    <price>42</price>
+    <currencyId>UAH</currencyId>
+    <categoryId>0</categoryId>
+    <picture>http://medtest.com.ua/file/6348</picture>
+    <name><![CDATA[Phospho-Jen AS (Jendental)]]></name>
+    <vendorCode><![CDATA[]]></vendorCode>
+    <description><![CDATA[<p><em><font color="#003366">Протравочный гель, содержащий 37% ортофосфорной кислоты c добавлением антисептика</font></em> </p>
+<p><em><font color="#003366">Назначение:</font></em> </p>
+<p>Кислотное протравливание дентина и эмали. </p>
+<p><em><font color="#003366">Преимущества:</font></em> </p>
+<p>Содержит 37% ортофосфорной кислоты. Не содержит диоксида кремния. Гелеобразующее вещество - биополимер. Не испаряется Синее окрашивание упрощает работу. Содержит антисептик (8-оксихинолин - сульфат). Обладает ярко выраженным тиксотропным эффектом. Поставляется в шприцах емкостью 5 мл с очень тонкими канюлями, которые обеспечивают аккуратное и безопасное нанесение геля только в тех областях, где необходимо произвести протравливание. Удобен и прост в применении. Моментально смывается струей воды.</p>]]></description>
+</offer>
+<offer id="121" available="true">
+    <price>595</price>
+    <currencyId>UAH</currencyId>
+    <categoryId>0</categoryId>
+    <picture>http://medtest.com.ua/file/6349</picture>
+    <name><![CDATA[Bifluorid 12 (VOCO)]]></name>
+    <vendorCode><![CDATA[]]></vendorCode>
+    <description><![CDATA[<p><font color="#003366"><em>Бесцветный фтористый лак с фторидами натрия и кальция</em></font> </p>
+<p><em><font color="#003366">Показания: </font></em></p>
+<p>Лечение гиперстезии шейки зуба. Местное глубокое фторирование. Реминерализация эмали. Профилактика кариеса. </p>
+<p><em><font color="#003366">Преимущества:</font></em></p>
+<p>Уменьшает чувствительность. Образует отложение кальция и фтора для интенсивного и продолжительного фторирования. Прозрачный - не изменяет цвет зубов. Специальная основа лака усиливает продолжительность эффекта и глубокое фторирование. Экономичен и прост - широкая сфера применения, низкая стоимость, быстрое применение. Быстро высыхает. </p>]]></description>
+</offer>
+<offer id="122" available="true">
+    <price>136</price>
+    <currencyId>UAH</currencyId>
+    <categoryId>0</categoryId>
+    <picture>http://medtest.com.ua/file/6350</picture>
+    <name><![CDATA[Calcimol (VOCO)]]></name>
+    <vendorCode><![CDATA[]]></vendorCode>
+    <description><![CDATA[]]></description>
+</offer>
+<offer id="123" available="true">
+    <price>41</price>
+    <currencyId>UAH</currencyId>
+    <categoryId>0</categoryId>
+    <picture>http://medtest.com.ua/file/6352</picture>
+    <name><![CDATA[Opalescence (Ultradent)]]></name>
+    <vendorCode><![CDATA[]]></vendorCode>
+    <description><![CDATA[<p><em><font color="#003366">Зубная паста для ежедневного использования</font></em> </p>
+<p>• Уникальная формула делает возможным эффективное и быстрое высвобождение ионов фтора. • Максимальное накопление фторида в эмали. • Максимальная защита эмали и дентина при реставрациях. • Защищает зубы от окрашивания после отбеливания. </p>
+<p>Зубная паста Opalescence прекрасно подходит для пациентов, желающих сохранить белизну своих отбеленных зубов. Ее свежий запах и уникальные свойства делают зубную пасту Opalescence наилучшим выбором для тех, кто желает поддерживать зубы и ротовую полость в прекрасном здоровом со- стоянии. Уникальная формула способствует накоплению фторида в эмали. Паста обладает минимальной абразивностью при чистке зубов. </p>]]></description>
+</offer>
+<offer id="124" available="true">
+    <price>41</price>
+    <currencyId>UAH</currencyId>
+    <categoryId>0</categoryId>
+    <picture>http://medtest.com.ua/file/6353</picture>
+    <name><![CDATA[Flor-Opal Varnish (Ultradent)]]></name>
+    <vendorCode><![CDATA[]]></vendorCode>
+    <description><![CDATA[Фторирующий лак, со вкусом жевательной резинки или мяты]]></description>
+</offer>
+<offer id="125" available="true">
+    <price>227.7</price>
+    <currencyId>UAH</currencyId>
+    <categoryId>0</categoryId>
+    <picture>http://medtest.com.ua/file/6354</picture>
+    <name><![CDATA[Biflu-Jen LC (Jendental)]]></name>
+    <vendorCode><![CDATA[]]></vendorCode>
+    <description><![CDATA[<p><font color="#003366"><em>Бифторидный лак для лечения гиперестезии тканей зуба, профилактики кариеса и запечатывания дентинных канальцев</em></font> </p>
+<p><em><font color="#003366">Назначение:</font></em> </p>
+<p>Фторирование зубов для профилактики кариеса. Местное фторирование после терапевтических процедур и полировки. Снижение чувствительности твердых тканей зуба. Защита эрозий в пришеечных областях. Запечатывание дентинных канальцев и создание защитного барьера в полостях. Изоляция поверхности зубов после механической обработки. Постоперационная обработка участков эмали, подвергшихся действию кислоты. Местное подавление бактериальной активности. </p>
+<p><font color="#003366"><em>Преимущества:</em></font> </p>
+<p>Быстросохнущий дентальный лак, содержащий микросуспензии фторидов кальция и натрия. Высокая текучесть препарата позволяет формировать достаточно тонкий слой, что весьма удобно, особенно при защите областей близко прилегающих к корневым каналам. Фториды кальция и натрия являются источниками ионов фтора, насыщающими ткани зуба и оказывающими выраженное терапевтическое воздействие при изоляции дна полостей, а также местном применении в качестве профилактического средства против кариеса. Содержание тимола, обеспечивает выраженое антибактериальное действие. Препарат прозрачен и не вызывает изменения окраски зубов. Высокая скорость высыхания предоставляет дополнительный комфорт как врачу, так и пациенту.</p>]]></description>
+</offer>
+<offer id="158" available="true">
+    <price>195</price>
+    <currencyId>UAH</currencyId>
+    <categoryId>0</categoryId>
+    <picture>http://medtest.com.ua/file/134436</picture>
+    <name><![CDATA[Тест на овуляцію Biomerica]]></name>
+    <vendorCode><![CDATA[]]></vendorCode>
+    <description><![CDATA[<p><img height="37" alt="New-Biomerica-Logo150.jpg" width="200" align="uitlijnen..." src="http://medtest.com.ua/?file=134460" /><span style="font-size: 14px; font-family: Arial"><br />
+</span></p>
+<p><span style="word-spacing: 0px; font: 14px Arial; text-transform: none; color: #000000; text-indent: 0px; white-space: normal; letter-spacing: normal; border-collapse: separate; orphans: 2; widows: 2; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0">Иммунохроматографический, струйный тест на овуляцию производства компании Biomerica &nbsp;позволяет определить момент овуляции с точностью, превышающей 99%</span></p>
+<p><span style="font-size: 14px; font-family: Arial">В упаковке содержится 5 тестовых кассет, что позволит Вам максимально точно определить наиболее подходящее для зачатия время.&nbsp;</span></p>
+<p><span style="font-size: 14px; font-family: Arial">Тест очень прост в использовании, результат уже через 1 минуту!</span></p>
+<ul>
+<li><span style="word-spacing: 0px; font: 14px Arial; text-transform: none; color: #000000; text-indent: 0px; white-space: normal; letter-spacing: normal; border-collapse: separate; orphans: 2; widows: 2; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0">чувствительность 30 mlU/ml</span> </li>
+<li><span style="word-spacing: 0px; font: 14px Arial; text-transform: none; color: #000000; text-indent: 0px; white-space: normal; letter-spacing: normal; border-collapse: separate; orphans: 2; widows: 2; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0">точность более 99%</span> </li>
+<li><span style="word-spacing: 0px; font: 14px Arial; text-transform: none; color: #000000; text-indent: 0px; white-space: normal; letter-spacing: normal; border-collapse: separate; orphans: 2; widows: 2; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0">результаты через 1 минуту</span> </li>
+<li><span style="word-spacing: 0px; font: 14px Arial; text-transform: none; color: #000000; text-indent: 0px; white-space: normal; letter-spacing: normal; border-collapse: separate; orphans: 2; widows: 2; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0">прост в использовании</span> </li>
+<li><span style="word-spacing: 0px; font: 14px Arial; text-transform: none; color: #000000; text-indent: 0px; white-space: normal; letter-spacing: normal; border-collapse: separate; orphans: 2; widows: 2; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0">проверен: используется врачами и больницами по всему миру</span> </li>
+<li><span style="font-size: 14px; font-family: Arial">нет необходимости придерживаться диеты</span> </li>
+<li><span style="font-size: 14px; font-family: Arial">употребление медикаментов не влияет на результат теста</span></li></ul>
+<div><span style="font-family: Arial; -webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px"><br />
+</span></div>
+<div><span style="font-size: 14px"><span style="font-size: 16px; -webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px"><font face="Arial">EZ-LH ™ One Step тест на овуляцию определяет повышение уровня лютенизирующего гармона в моче женщины, что означает наступление овуляции.</font></span><font face="Arial"><br />
+</font></span></div>
+<div><span style="font-family: Arial; -webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px"><br />
+</span></div>
+<div><span style="-webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px"><font face="Arial">Точное определение времени наступления овуляции повышает ваши шансы на зачатие!!</font></span></div>]]></description>
+</offer>
+<offer id="193" available="true">
+    <price>390</price>
+    <currencyId>UAH</currencyId>
+    <categoryId>0</categoryId>
+    <picture>http://medtest.com.ua/file/138782</picture>
+    <name><![CDATA[Opalescence Treswhite Supreme]]></name>
+    <vendorCode><![CDATA[]]></vendorCode>
+    <description><![CDATA[<p><strong>OPALESCENCE TRES WHITE SUPREME</strong> - усовершенствованные, предварительно заполненные отбеливающим гелем капы (10%PF перекиси водорода + фторид натия + нитрат калия). Упаковка: 10 кап на нижнюю челюсть и 10 кап на верхнюю. Вкус - мятный, персик и арбуз.</p>
+<p><strong>Как действует препарат?</strong><br />
+Отбеливание зубов никогда еще не было настолько простым. Инновационные заполненные гелем отбеливающие пластинки (капы) Treswhite просто размещаются на зубах до комфортного расположения. Тонкая мембранная пластинка клеится к зубам и надежно остается на месте в течении 60 минут. Да, только 60 минут, один раз в день. Это так просто.</p>
+<p><strong>Безопасно ли это?</strong><br />
+Treswhite – это совершенно безопасный способ отбеливания ваших зубов. В действительности, Treswhite содержит нитрат калия и фторид. Доказано, что именно эти препараты предотвращают кариес и реминерализуют зубы.</p>
+<p><strong>Когда я увижу результаты?</strong><br />
+Treswhite – это самый мощный препарат для домашнего отбеливания зубов. Благодаря высокому содержанию пероксида, результаты достигаются очень быстро. Отмечены первые улучшения по истечению всего лишь одного дня.</p>
+<p><strong>Как мне сохранить свою улыбку?</strong><br />
+После того как вы получили долгожданную белоснежную улыбку, очень важно сохранить её. Соблюдайте тщательную гигиену рта и никогда не забывайте чистить зубы после потребления продуктов и напитков с окрашивающими свойствами. &nbsp;Отбеливающая зубная паста &nbsp;Opalescence - это превосходный продукт для поддержания яркости вашей улыбки. Она не только отбеливает, но и содержит больше фторида, чем любая другая зубная паста. Вы сможете заказать её через своего стоматолога.</p>
+<p><a title="" href="http://medtest.com.ua/read/50/8338">Инструкция Opalescence Treswhite Supreme</a></p>]]></description>
+</offer>
+
+</offers>
+</shop>
+</yml_catalog>
