@@ -42,7 +42,6 @@
     <category id="104" parentId="86">ЗПСШ</category>
     <category id="106" parentId="75">Биохимические тесты</category>
     <category id="107">Отбеливание зубов</category>
-
 </categories>
 <offers>
 <offer id="1" available="true">
@@ -1437,6 +1436,6 @@
 <p><font face="wp_bogus_font">Активные ингридиенты: Cetylpyridinium (Anti-Bacterial), Chloride (0.075%) (Mouth Rinse).</font></p>
 <p><font face="wp_bogus_font">Неактивные ингридиенты: Citric Acid, Cocamidopropyl Betaine, FD&amp;C Blue 1 (CI 42090), Flavor (Mint, Thymol &amp; Eucalyptus Oil), Hydrogenated Starch Hydrolysate, PEG 40 Hydrogenated Castor Oil, Poloxamer 407, Propylene Glycol, Sodium Saccharin, Sorbitol, Water, Xylitol, Zinc Gluconate.</font></p>]]></description>
 </offer>
-
+</offers>
 </shop>
 </yml_catalog>
