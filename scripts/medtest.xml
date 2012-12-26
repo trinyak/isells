@@ -42,6 +42,7 @@
     <category id="104" parentId="86">ЗПСШ</category>
     <category id="106" parentId="75">Биохимические тесты</category>
     <category id="107">Отбеливание зубов</category>
+    <category id="108">Без категории</category>    
 </categories>
 <offers>
 <offer id="1" available="true">
@@ -71,7 +72,7 @@
 <offer id="6" available="true">
     <price>75</price>
     <currencyId>UAH</currencyId>
-    <categoryId>0</categoryId>
+    <categoryId>108</categoryId>
     <picture>http://medtest.com.ua/file/1332</picture>
     <name><![CDATA[Тест на беременность (1)]]></name>
     <vendorCode><![CDATA[]]></vendorCode>
@@ -111,7 +112,7 @@
 <offer id="98" available="true">
     <price>96</price>
     <currencyId>UAH</currencyId>
-    <categoryId>0</categoryId>
+    <categoryId>108</categoryId>
     <picture>http://medtest.com.ua/file/4945</picture>
     <name><![CDATA[Тест на мононуклеоз]]></name>
     <vendorCode><![CDATA[]]></vendorCode>
@@ -127,7 +128,7 @@
 <offer id="99" available="true">
     <price>57</price>
     <currencyId>UAH</currencyId>
-    <categoryId>0</categoryId>
+    <categoryId>108</categoryId>
     <picture>http://medtest.com.ua/file/4939</picture>
     <name><![CDATA[Тест на беременность (2) ]]></name>
     <vendorCode><![CDATA[]]></vendorCode>
@@ -141,7 +142,7 @@
 <offer id="100" available="true">
     <price>34</price>
     <currencyId>UAH</currencyId>
-    <categoryId>0</categoryId>
+    <categoryId>108</categoryId>
     <picture>http://medtest.com.ua/file/4941</picture>
     <name><![CDATA[Тест на менопаузу]]></name>
     <vendorCode><![CDATA[]]></vendorCode>
@@ -155,7 +156,7 @@
 <offer id="101" available="true">
     <price>125</price>
     <currencyId>UAH</currencyId>
-    <categoryId>0</categoryId>
+    <categoryId>108</categoryId>
     <picture>http://medtest.com.ua/file/4943</picture>
     <name><![CDATA[Тест на овуляцию Mirates]]></name>
     <vendorCode><![CDATA[]]></vendorCode>
@@ -200,7 +201,7 @@
 <offer id="104" available="true">
     <price>54</price>
     <currencyId>UAH</currencyId>
-    <categoryId>0</categoryId>
+    <categoryId>108</categoryId>
     <picture>http://medtest.com.ua/file/1333</picture>
     <name><![CDATA[Тест на скрытую кровь в кале (Bowel) ]]></name>
     <vendorCode><![CDATA[Bowel]]></vendorCode>
@@ -339,7 +340,7 @@
 <offer id="138" available="true">
     <price>200</price>
     <currencyId>UAH</currencyId>
-    <categoryId>0</categoryId>
+    <categoryId>108</categoryId>
     <picture>http://medtest.com.ua/file/1336</picture>
     <name><![CDATA[Тест на ВІЛ]]></name>
     <vendorCode><![CDATA[]]></vendorCode>
@@ -352,7 +353,7 @@
 <offer id="165" available="true">
     <price>135</price>
     <currencyId>UAH</currencyId>
-    <categoryId>0</categoryId>
+    <categoryId>108</categoryId>
     <picture>http://medtest.com.ua/file/136878</picture>
     <name><![CDATA[Струйный тест на  менопаузу MENOTEST]]></name>
     <vendorCode><![CDATA[]]></vendorCode>
@@ -445,7 +446,7 @@
 <offer id="151" available="true">
     <price>145</price>
     <currencyId>UAH</currencyId>
-    <categoryId>0</categoryId>
+    <categoryId>108</categoryId>
     <picture>http://medtest.com.ua/file/134538</picture>
     <name><![CDATA[Тест на овуляцию (fortel Ovulation test, Biomerica, USA)]]></name>
     <vendorCode><![CDATA[express_test_ovulaciya]]></vendorCode>
@@ -475,7 +476,7 @@
 <offer id="152" available="true">
     <price>25</price>
     <currencyId>UAH</currencyId>
-    <categoryId>0</categoryId>
+    <categoryId>108</categoryId>
     <picture>http://medtest.com.ua/file/134716</picture>
     <name><![CDATA[Тест на беременность (fortel hCG Midstream, Biomerica, USA)]]></name>
     <vendorCode><![CDATA[test_na_beremennost]]></vendorCode>
@@ -518,7 +519,7 @@
 <offer id="154" available="true">
     <price>95</price>
     <currencyId>UAH</currencyId>
-    <categoryId>0</categoryId>
+    <categoryId>108</categoryId>
     <picture>http://medtest.com.ua/file/134449</picture>
     <name><![CDATA[Тест на антиген простаты (fortel prostate PSA, Biomerica,USA)]]></name>
     <vendorCode><![CDATA[PSA]]></vendorCode>
@@ -595,7 +596,7 @@
 <offer id="157" available="true">
     <price>95</price>
     <currencyId>UAH</currencyId>
-    <categoryId>0</categoryId>
+    <categoryId>108</categoryId>
     <picture>http://medtest.com.ua/file/134450</picture>
     <name><![CDATA[Тест на  H.Pylori (fortel ulcer H.pylori, Biomerica, USA)]]></name>
     <vendorCode><![CDATA[h_pilory_test]]></vendorCode>
@@ -699,7 +700,7 @@
 <offer id="162" available="true">
     <price>45</price>
     <currencyId>UAH</currencyId>
-    <categoryId>0</categoryId>
+    <categoryId>108</categoryId>
     <picture>http://medtest.com.ua/file/134716</picture>
     <name><![CDATA[Тест на овуляцию Midstream (fortel Ovulation test, Biomerica, USA)]]></name>
     <vendorCode><![CDATA[test_ovulyaciya_midstream]]></vendorCode>
@@ -872,7 +873,7 @@
 <offer id="183" available="true">
     <price>0</price>
     <currencyId>UAH</currencyId>
-    <categoryId>0</categoryId>
+    <categoryId>108</categoryId>
     <picture>http://medtest.com.ua/file/0</picture>
     <name><![CDATA[Тест-система для определения токсоплазмоза (IgG)]]></name>
     <vendorCode><![CDATA[]]></vendorCode>
@@ -954,7 +955,7 @@
 <offer id="189" available="true">
     <price>65</price>
     <currencyId>UAH</currencyId>
-    <categoryId>0</categoryId>
+    <categoryId>108</categoryId>
     <picture>http://medtest.com.ua/file/137140</picture>
     <name><![CDATA[Тест на белок в моче, Fortel Microalbumin Screening, Biomerica (USA)]]></name>
     <vendorCode><![CDATA[]]></vendorCode>
@@ -1094,7 +1095,7 @@
 <offer id="200" available="true">
     <price>96</price>
     <currencyId>UAH</currencyId>
-    <categoryId>0</categoryId>
+    <categoryId>108</categoryId>
     <picture>http://medtest.com.ua/file/2817136</picture>
     <name><![CDATA[Nieuw product]]></name>
     <vendorCode><![CDATA[продукт]]></vendorCode>
@@ -1103,7 +1104,7 @@
 <offer id="201" available="true">
     <price>97</price>
     <currencyId>UAH</currencyId>
-    <categoryId>0</categoryId>
+    <categoryId>108</categoryId>
     <picture>http://medtest.com.ua/file/2817138</picture>
     <name><![CDATA[Nieuw product 1]]></name>
     <vendorCode><![CDATA[]]></vendorCode>
@@ -1358,7 +1359,7 @@
 <offer id="206" available="true">
     <price>6</price>
     <currencyId>UAH</currencyId>
-    <categoryId>0</categoryId>
+    <categoryId>108</categoryId>
     <picture>http://medtest.com.ua/file/0</picture>
     <name><![CDATA[Тест на овуляцию (полоска ovulation)]]></name>
     <vendorCode><![CDATA[]]></vendorCode>
@@ -1403,7 +1404,7 @@
 <offer id="211" available="true">
     <price>6</price>
     <currencyId>UAH</currencyId>
-    <categoryId>0</categoryId>
+    <categoryId>108</categoryId>
     <picture>http://medtest.com.ua/file/2817198</picture>
     <name><![CDATA[Тест на беременность (полоска diagnostic)]]></name>
     <vendorCode><![CDATA[]]></vendorCode>
