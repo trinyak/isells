@@ -16,32 +16,32 @@
     <category id="3" parentId="75">Гинекологические тесты</category>
     <category id="4" parentId="75">Инфекционные заболевания</category>
     <category id="73" parentId="75">Онкомаркеры</category>
-    <category id="74" parentId="0">Холестерол</category>
-    <category id="75" parentId="0">Экспресс-тесты</category>
-    <category id="76" parentId="0">Специальное предложение</category>
+    <category id="74" >Холестерол</category>
+    <category id="75" >Экспресс-тесты</category>
+    <category id="76" >Специальное предложение</category>
     <category id="78" parentId="77">Светоотверждаемые реставрационные композитные материалы</category>
     <category id="79" parentId="77">Прокладочные стеклоиономерные материалы</category>
     <category id="82" parentId="77">Адгезивные системы</category>
     <category id="83" parentId="77">Временные пломбировочные материалы</category>
     <category id="84" parentId="77">Препараты для профилактики</category>
-    <category id="86" parentId="0">Експрес-тести</category>
+    <category id="86" >Експрес-тести</category>
     <category id="87" parentId="86">Гінекологічні тести</category>
     <category id="88" parentId="86">Інфекційні тести</category>
-    <category id="89" parentId="0">Спеціальна пропозиція</category>
+    <category id="89" >Спеціальна пропозиція</category>
     <category id="90" parentId="86">Онкомаркери</category>
     <category id="94" parentId="75">Кардиомаркеры</category>
     <category id="95" parentId="86">Кардіомаркери</category>
     <category id="96" parentId="75">Наркотические вещества</category>
     <category id="97" parentId="86">Наркотичні речовини</category>
-    <category id="98" parentId="0">Овуляция Biomerica</category>
-    <category id="99" parentId="0">Тесты для лабораторий</category>
+    <category id="98" >Овуляция Biomerica</category>
+    <category id="99" >Тесты для лабораторий</category>
     <category id="100" parentId="99">Инфекционные заболевания</category>
     <category id="101" parentId="99">Паразитарные заболевания</category>
-    <category id="102" parentId="0">Аллергические тесты</category>
+    <category id="102" >Аллергические тесты</category>
     <category id="103" parentId="75">ЗППП</category>
     <category id="104" parentId="86">ЗПСШ</category>
     <category id="106" parentId="75">Биохимические тесты</category>
-    <category id="107" parentId="0">Отбеливание зубов</category>
+    <category id="107" >Отбеливание зубов</category>
 
 </categories>
 <offers>
