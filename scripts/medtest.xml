@@ -1,14 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE yml_catalog SYSTEM "shops.dtd">
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE yml_catalog SYSTEM "shops.dtd">
 <yml_catalog date="2012-07-18 10:05">
 <shop>
-<name>realmart</name>
-<company>realmart</company>
-<url>http://realmart.com.ua</url>
+<name>MedTest</name>
+<company>Medtest</company>
+<url>http://medtest.com.ua</url>
 <platform>Aqua-CMS</platform>
 <version>1.9</version>
-<agency><![CDATA[ООО «Аква-вебстудио»]]></agency>
-<email>info@aquaweb.com.ua</email>
+<agency><![CDATA[ООО «MedTest»]]></agency>
+<email>info@medtest.com.ua</email>
 <currencies>
     <currency id="UAH" rate="1"/>
 </currencies>
@@ -19,6 +18,7 @@
     <category id="74" >Холестерол</category>
     <category id="75" >Экспресс-тесты</category>
     <category id="76" >Специальное предложение</category>
+    <category id="77" >Отбеливание</category>
     <category id="78" parentId="77">Светоотверждаемые реставрационные композитные материалы</category>
     <category id="79" parentId="77">Прокладочные стеклоиономерные материалы</category>
     <category id="82" parentId="77">Адгезивные системы</category>
