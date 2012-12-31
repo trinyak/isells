@@ -45,7 +45,7 @@ DEBUG = False
     #python manage.py createsuperuser --username=admin --email=a@dmin.com
 
     # adding a Django super-user
-    echo "from django.contrib.auth.models import User; User.objects.create_superuser('admin', 'admin@isells.eu', '551737')" | python manage.py shell
+    echo "from django.contrib.auth.models import User; User.objects.create_superuser('admin', 'admin@${SITE_NAME}.isells.eu', 'admin')" | python manage.py shell
 
     # importing a demo products
     python manage.py importyml /data/isells.eu/isells/scripts/demo_site_data_yml.xml --images
