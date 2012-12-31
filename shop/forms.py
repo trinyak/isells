@@ -7,6 +7,7 @@ class ContactForm(forms.Form):
     sender = forms.EmailField()
     cc_myself = forms.BooleanField(required=False)
 
+
 class WebsiteForm(forms.ModelForm):
     class Meta:
         model = Website

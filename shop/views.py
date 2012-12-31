@@ -3,9 +3,12 @@ from django.http import HttpResponseRedirect
 from django.template import RequestContext
 from shop.forms import WebsiteForm
 from shop.models import Website
-from django.contrib.auth.models import User
 from shop.tasks import addWebsite
 from django.http import HttpResponse, HttpResponseNotFound
+
+def index(request):
+    return render_to_response('shop/index.html', {}, context_instance=RequestContext(request))
+
 
 def create(request):
     if request.method == 'POST':
@@ -16,7 +19,7 @@ def create(request):
                 name=form.cleaned_data['name'],
                 slug=form.cleaned_data['slug'],
                 plan=form.cleaned_data['plan'],
-                user=User.objects.get(pk=1)
+                user=request.user
             )
             site.save()
 
@@ -30,7 +33,7 @@ def create(request):
     else:
         form = WebsiteForm(initial={'plan': '2'}) # by default Standard
 
-    return render_to_response('shop/website.html', {'form': form}, context_instance=RequestContext(request))
+    return render_to_response('shop/create.html', {'form': form}, context_instance=RequestContext(request))
 
 
 def wait(request, site_id):

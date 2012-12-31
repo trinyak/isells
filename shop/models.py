@@ -11,6 +11,7 @@ class Plan(models.Model):
     def __unicode__(self):
         return self.name
 
+
 class Website(models.Model):
     name = models.CharField(max_length=30)
     slug = AutoSlugField(populate_from='name', unique=True, always_update=True, editable=True, blank=True)
