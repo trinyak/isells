@@ -96,6 +96,6 @@ touch-reload = /data/projects/${SITE_NAME}/django-shop/reload
 " > /etc/uwsgi/apps-enabled/${SITE_NAME}.ini
 
 service nginx reload
-service uwsgi reload
+service uwsgi restart
 
 exit 0
