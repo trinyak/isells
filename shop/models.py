@@ -21,6 +21,9 @@ class Website(models.Model):
     date_add = models.DateTimeField(default=datetime.now, auto_now_add=True, blank=True)
     date_mod = models.DateTimeField(default=datetime.now, auto_now=True, blank=True)
 
+    def __unicode__(self):
+        return self.name + ' [' + self.domain + ']'
+
 
 class Subscriptions(models.Model):
     date_start = models.DateTimeField()

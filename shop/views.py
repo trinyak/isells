@@ -5,6 +5,7 @@ from shop.forms import WebsiteForm
 from shop.models import Website
 from django.contrib.auth.models import User
 from shop.tasks import addWebsite
+from django.http import HttpResponse, HttpResponseNotFound
 
 def create(request):
     if request.method == 'POST':
@@ -14,19 +15,34 @@ def create(request):
             site = Website(
                 name=form.cleaned_data['name'],
                 slug=form.cleaned_data['slug'],
-                domain = form.cleaned_data['slug'] + 'isells.eu',
                 plan=form.cleaned_data['plan'],
                 user=User.objects.get(pk=1)
             )
-
             site.save()
+
+            # hack, need to find a better way
+            site.domain = site.slug + '.isells.eu';
+            site.save()
+
             addWebsite.delay(site)
 
-            return HttpResponseRedirect('/shop/wait') # Redirect after POST
+            return HttpResponseRedirect('/shop/wait/' + str(site.pk)) # Redirect after POST
     else:
         form = WebsiteForm(initial={'plan': '2'}) # by default Standard
 
     return render_to_response('shop/website.html', {'form': form}, context_instance=RequestContext(request))
 
-def wait(request):
-    return render_to_response('shop/wait.html', {}, context_instance=RequestContext(request))
+
+def wait(request, site_id):
+    site = Website.objects.get(pk=site_id)
+    return render_to_response('shop/wait.html', {'site': site}, context_instance=RequestContext(request))
+
+
+def check_status(request, site_id):
+    site = Website.objects.get(pk=site_id)
+
+    if site.created:
+        return HttpResponse()
+    else:
+        return HttpResponseNotFound()
+

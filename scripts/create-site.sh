@@ -8,6 +8,8 @@ else
     SITE_NAME=$1
 fi
 
+rm -r /data/projects/${SITE_NAME}
+
 mkdir /data/projects/${SITE_NAME}
 cd /data/projects/${SITE_NAME}
 mkdir static
