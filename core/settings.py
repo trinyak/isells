@@ -1,9 +1,23 @@
 # -*- coding: utf-8 -*-
 import os
+import djcelery
+djcelery.setup_loader()
+
+BROKER_URL = 'mongodb://isells:baster551737@ds045907.mongolab.com:45907/isells'
+
+CELERY_RESULT_BACKEND = "mongodb"
+CELERY_MONGODB_BACKEND_SETTINGS = {
+    "host": "ds045907.mongolab.com",
+    "port": 45907,
+    "user": "isells",
+    "password": "baster551737",
+    "database": "isells",
+}
 
 gettext = lambda s: s
 
 PROJECT_DIR = os.path.abspath(os.path.dirname(__file__))
+
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -132,7 +146,9 @@ INSTALLED_APPS = (
     'cms.plugins.googlemap',
     'sekizai',
     'theme',
-    'registration'
+    'registration',
+    'djcelery',
+    'shop'
     )
 
 REGISTRATION_OPEN = True

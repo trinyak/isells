@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load menu_tags cms_tags sekizai_tags %}
+{% block content %}
+    <!-- coming soon -->
+    <div id="comingsoon" class="comingsoon_page">
+        <div class="container">
+            <div class="countdown">
+                <div class="row">
+                    <div class="span6 offset1 left">
+                        <h1>{{ request.current_page.get_title }}</h1>
+                        {% placeholder "content" or %}
+                            <p>
+                                There are many variations of passages of Lorem Ipsum available, but the majority
+                                have suffered alteration in some form, by injected humour, or randomised words.
+                            </p>
+                        {% endplaceholder %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

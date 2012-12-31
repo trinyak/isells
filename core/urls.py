@@ -8,6 +8,7 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': {'cmspages': CMSSitemap}}),
     url(r'^accounts/', include('registration.backends.simple.urls')),
+    url(r'^shop/', include('shop.urls')),
     url(r'^', include('cms.urls')),
 )
 

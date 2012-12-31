@@ -1,78 +1,97 @@
-#!/bin/sh
+#!/bin/bash
 
-mkdir /data/projects/medtest
-cd /data/projects/medtest
+if test -z "$1"
+then
+    echo "Error: site name is not set!"
+    exit 0
+else
+    SITE_NAME=$1
+fi
+
+mkdir /data/projects/${SITE_NAME}
+cd /data/projects/${SITE_NAME}
 mkdir static
 mkdir media
 mkdir logs
-sudo chown -R www-data:www-data /data/projects/medtest
+sudo chown -R www-data:www-data /data/projects/${SITE_NAME}
 
-backup_dir1(){
-   cd /data/projects/medtest;
-   virtualenv --system-site-packages env;
-   source env/bin/activate;
-   git clone https://github.com/alexzaporozhets/django-shop.git
-   cd django-shop
-   pip install -r requirements.txt
-   python manage.py collectstatic --noinput
+init_site(){
+    cd /data/projects/${SITE_NAME};
+    virtualenv --system-site-packages env;
+    source env/bin/activate;
+    git clone https://github.com/alexzaporozhets/django-shop.git
+    cd django-shop
+    pip install -r requirements.txt
+    python manage.py collectstatic --noinput
 
 echo "
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'medtest',
+        'NAME': '${SITE_NAME}',
         'USER': 'root',
         'PASSWORD': 'baster551737',
         'HOST': 'isells.cbiec5vjmqef.us-east-1.rds.amazonaws.com',
         'PORT': '',
     }
 }
+DEBUG = False
 " > local_settings.py
-  mysql -h isells.cbiec5vjmqef.us-east-1.rds.amazonaws.com -uroot -pbaster551737 -e "DROP DATABASE IF EXISTS medtest"
-  mysql -h isells.cbiec5vjmqef.us-east-1.rds.amazonaws.com -uroot -pbaster551737 -e "CREATE DATABASE medtest CHARACTER SET='utf8'"
-  python manage.py syncdb --migrate --noinput
-  #python manage.py createsuperuser --username=admin --email=a@dmin.com
-  echo "from django.contrib.auth.models import User; User.objects.create_superuser('admin', 'admin@isells.eu', '551737')" | python manage.py shell
+
+    # creating a database
+    mysql -h isells.cbiec5vjmqef.us-east-1.rds.amazonaws.com -uroot -pbaster551737 -e "DROP DATABASE IF EXISTS ${SITE_NAME}"
+    mysql -h isells.cbiec5vjmqef.us-east-1.rds.amazonaws.com -uroot -pbaster551737 -e "CREATE DATABASE ${SITE_NAME} CHARACTER SET='utf8'"
+    python manage.py syncdb --migrate --noinput
+    #python manage.py createsuperuser --username=admin --email=a@dmin.com
+
+    # adding a Django super-user
+    echo "from django.contrib.auth.models import User; User.objects.create_superuser('admin', 'admin@isells.eu', '551737')" | python manage.py shell
+
+    # importing a demo products
+    python manage.py importyml /data/isells.eu/isells/scripts/demo_site_data_yml.xml --images
 }
 
-export -f backup_dir1
+export SITE_NAME=${SITE_NAME}
+export -f init_site
 
-su www-data -c "bash -c backup_dir1"
+su www-data -c "bash -c init_site"
 
-echo '
+# adding nginx config
+echo "
 server {
     listen  80;
-    server_name medtest.isells.eu;
-    access_log /data/projects/medtest/logs/nginx_access.log;
-    error_log /data/projects/medtest/logs/nginx_error.log;
+    server_name ${SITE_NAME}.isells.eu;
+    access_log /data/projects/${SITE_NAME}/logs/nginx_access.log;
+    error_log /data/projects/${SITE_NAME}/logs/nginx_error.log;
 
     location / {
-        uwsgi_pass  unix:///var/run/uwsgi/app/medtest/socket;
+        uwsgi_pass  unix:///var/run/uwsgi/app/${SITE_NAME}/socket;
         include     uwsgi_params;
     }
 
     location /media/  {
-        alias /data/projects/medtest/media/;
+        alias /data/projects/${SITE_NAME}/media/;
     }
 
     location  /static/ {
-        alias /data/projects/medtest/static/;
+        alias /data/projects/${SITE_NAME}/static/;
     }
 }
-' > /etc/nginx/sites-enabled/medtest
+" > /etc/nginx/sites-enabled/${SITE_NAME}
 
-echo '
+# adding uwsgi config
+echo "
 [uwsgi]
 vhost = true
 plugins = python
 master = true
 enable-threads = true
 processes = 2
-wsgi-file = /data/projects/medtest/django-shop/core/wsgi.py
-virtualenv = /data/projects/medtest/env
-chdir = /data/projects/medtest/django-shop/
-touch-reload = /data/projects/medtest/django-shop/reload
-' > /etc/uwsgi/apps-enabled/medtest.ini
+wsgi-file = /data/projects/${SITE_NAME}/django-shop/core/wsgi.py
+virtualenv = /data/projects/${SITE_NAME}/env
+chdir = /data/projects/${SITE_NAME}/django-shop/
+touch-reload = /data/projects/${SITE_NAME}/django-shop/reload
+" > /etc/uwsgi/apps-enabled/${SITE_NAME}.ini
 
 service nginx reload
 service uwsgi restart
