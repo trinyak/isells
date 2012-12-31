@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Sign up{% endblock %}
+
+{% block content %}
+    <div id="box_sign">
+        <div class="container">
+            <div class="span12 box_wrapper">
+                <div class="span12 box">
+                    <div>
+
+                        <div class="head">
+                            <h4>Create your online store</h4>
+                        </div>
+
+                        <div class="form">
+                            <form action="/shop/" method="post">{% csrf_token %}
+                                <table>{{ form.as_p }}</table>
+
+                                <input type="submit" value="Submit" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block footer %}{% endblock %}
+
