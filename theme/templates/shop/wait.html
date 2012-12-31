@@ -3,13 +3,19 @@
 {% block content %}
     <script>
         function checkStatus() {
+            $('div#message').hide();
             $.ajax({
                 url:"/shop/check_status/{{ site.pk }}/",
                 error:function (result) {
                     setTimeout(checkStatus, 5000);
+                    $('p#message').show()
                 },
                 success:function (result) {
-                    alert('done')
+                    // lets make a cache for site
+                    $.ajax({
+                        url: 'http://{{ site.domain }}/'
+                    })
+                    $('div#message').show();
                 }
             });
         }
@@ -23,7 +29,15 @@
             <div class="countdown">
                 <div class="row">
                     <div class="span6 offset1 left">
-                        <h1>{{ site }}</h1>
+                        <h1>Please wait we are creating {{ site }}...</h1>
+                        <div id="message">
+                            <p>Successful</p>
+                            <ul>
+                                <li>You can open the site at <a href="http://{{ site.domain }}">http://{{ site.domain }}</a></li>
+                                <li>Admin interface can be found <a href="http://{{ site.domain }}/admin">here</a>, login: admin, pass: admin</li>
+                            </ul>
+
+                        </div>
                     </div>
                 </div>
             </div>
