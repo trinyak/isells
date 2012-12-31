@@ -161,8 +161,14 @@ REGISTRATION_OPEN = True
 
 AUTHENTICATION_BACKENDS = (
     'social_auth.backends.google.GoogleOAuth2Backend',
+    'social_auth.backends.contrib.github.GithubBackend',
     'django.contrib.auth.backends.ModelBackend',
 )
+
+SOCIAL_AUTH_ENABLED_BACKENDS = ('google-oauth2')
+
+GITHUB_APP_ID = ''
+GITHUB_API_SECRET = ''
 
 GOOGLE_OAUTH2_CLIENT_ID      = '947818718224.apps.googleusercontent.com'
 GOOGLE_OAUTH2_CLIENT_SECRET  = '70DLvY2X491gnztPMCJumMvU'
@@ -179,9 +185,7 @@ SOCIAL_AUTH_BACKEND_ERROR_URL = '/new-error-url/'
 SOCIAL_AUTH_COMPLETE_URL_NAME  = 'socialauth_complete'
 SOCIAL_AUTH_ASSOCIATE_URL_NAME = 'socialauth_associate_complete'
 
-import random
-SOCIAL_AUTH_DEFAULT_USERNAME = lambda: random.choice(['Darth Vader', 'Obi-Wan Kenobi', 'R2-D2', 'C-3PO', 'Yoda'])
-SOCIAL_AUTH_UUID_LENGTH = 16
+SOCIAL_AUTH_DEFAULT_USERNAME = 'new_social_auth_user'
 
 SOCIAL_AUTH_SESSION_EXPIRATION = False
 

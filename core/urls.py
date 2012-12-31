@@ -1,11 +1,13 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
 from cms.sitemaps import CMSSitemap
-from registration.forms import RegistrationFormUniqueEmail
+from django.views.generic.simple import redirect_to
+
 admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'', include('social_auth.urls')),
+    url(r'^login/$', redirect_to, {'url': '/login/github'}),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': {'cmspages': CMSSitemap}}),
     url(r'^accounts/', include('registration.backends.simple.urls')),
