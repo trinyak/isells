@@ -10,10 +10,10 @@ django-bootstrap-toolkit
 django-registration
 django-celery
 django-celery-with-mongodb
+celery
+celery-with-mongodb
 pytils
 PIL
 pymongo
 
 
-#celery
-#celery-with-mongodb
