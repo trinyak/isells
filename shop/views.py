@@ -14,6 +14,7 @@ def create(request):
             site = Website(
                 name=form.cleaned_data['name'],
                 slug=form.cleaned_data['slug'],
+                domain = form.cleaned_data['slug'] + 'isells.eu',
                 plan=form.cleaned_data['plan'],
                 user=User.objects.get(pk=1)
             )

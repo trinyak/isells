@@ -2,7 +2,7 @@ from shop.models import Website, Plan
 from django.contrib import admin
 
 class WebsiteAdmin(admin.ModelAdmin):
-    list_display = ('name', 'slug', 'plan', 'created')
+    list_display = ('name', 'domain', 'plan', 'created')
 
 admin.site.register(Website, WebsiteAdmin)
 

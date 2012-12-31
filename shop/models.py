@@ -16,6 +16,7 @@ class Website(models.Model):
     slug = AutoSlugField(populate_from='name', unique=True, always_update=True, editable=True, blank=True)
     user = models.ForeignKey(User)
     plan = models.ForeignKey(Plan)
+    domain = models.CharField(max_length=255, default="")
     created = models.BooleanField(default=False)
     date_add = models.DateTimeField(default=datetime.now, auto_now_add=True, blank=True)
     date_mod = models.DateTimeField(default=datetime.now, auto_now=True, blank=True)
