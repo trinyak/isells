@@ -5,6 +5,7 @@ from registration.forms import RegistrationFormUniqueEmail
 admin.autodiscover()
 
 urlpatterns = patterns('',
+    url(r'', include('social_auth.urls')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': {'cmspages': CMSSitemap}}),
     url(r'^accounts/', include('registration.backends.simple.urls')),

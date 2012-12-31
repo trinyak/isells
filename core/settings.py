@@ -107,7 +107,12 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.media',
     'django.core.context_processors.static',
     'cms.context_processors.media',
-    'sekizai.context_processors.sekizai'
+    'sekizai.context_processors.sekizai',
+
+    'social_auth.context_processors.social_auth_by_name_backends',
+    'social_auth.context_processors.social_auth_backends',
+    'social_auth.context_processors.social_auth_by_type_backends',
+    'social_auth.context_processors.social_auth_login_redirect',
 )
 
 CMS_TEMPLATES = (
@@ -148,7 +153,41 @@ INSTALLED_APPS = (
     'theme',
     'registration',
     'djcelery',
+    'social_auth',
     'shop'
     )
 
 REGISTRATION_OPEN = True
+
+AUTHENTICATION_BACKENDS = (
+    'social_auth.backends.google.GoogleOAuth2Backend',
+    'django.contrib.auth.backends.ModelBackend',
+)
+
+GOOGLE_OAUTH2_CLIENT_ID      = '947818718224.apps.googleusercontent.com'
+GOOGLE_OAUTH2_CLIENT_SECRET  = '70DLvY2X491gnztPMCJumMvU'
+
+LOGIN_URL          = '/login-form/'
+LOGIN_REDIRECT_URL = '/logged-in/'
+LOGIN_ERROR_URL    = '/login-error/'
+
+SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/another-login-url/'
+SOCIAL_AUTH_NEW_USER_REDIRECT_URL = '/new-users-redirect-url/'
+SOCIAL_AUTH_NEW_ASSOCIATION_REDIRECT_URL = '/new-association-redirect-url/'
+SOCIAL_AUTH_DISCONNECT_REDIRECT_URL = '/account-disconnected-redirect-url/'
+SOCIAL_AUTH_BACKEND_ERROR_URL = '/new-error-url/'
+SOCIAL_AUTH_COMPLETE_URL_NAME  = 'socialauth_complete'
+SOCIAL_AUTH_ASSOCIATE_URL_NAME = 'socialauth_associate_complete'
+
+import random
+SOCIAL_AUTH_DEFAULT_USERNAME = lambda: random.choice(['Darth Vader', 'Obi-Wan Kenobi', 'R2-D2', 'C-3PO', 'Yoda'])
+SOCIAL_AUTH_UUID_LENGTH = 16
+
+SOCIAL_AUTH_SESSION_EXPIRATION = False
+
+
+# include local_setting.py - for production
+try:
+    from local_settings import *
+except ImportError:
+    pass
