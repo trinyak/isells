@@ -161,17 +161,30 @@ REGISTRATION_OPEN = True
 
 AUTHENTICATION_BACKENDS = (
     'social_auth.backends.google.GoogleOAuth2Backend',
-    'social_auth.backends.contrib.github.GithubBackend',
+    'social_auth.backends.contrib.linkedin.LinkedinBackend',
     'django.contrib.auth.backends.ModelBackend',
 )
 
-SOCIAL_AUTH_ENABLED_BACKENDS = ('google-oauth2')
-
-GITHUB_APP_ID = ''
-GITHUB_API_SECRET = ''
+SOCIAL_AUTH_ENABLED_BACKENDS = ('google-oauth2', 'linkedin')
 
 GOOGLE_OAUTH2_CLIENT_ID      = '947818718224.apps.googleusercontent.com'
 GOOGLE_OAUTH2_CLIENT_SECRET  = '70DLvY2X491gnztPMCJumMvU'
+
+LINKEDIN_CONSUMER_KEY             = 'd7749002-5a9b-4974-bf80-2263f3e19f83'
+LINKEDIN_CONSUMER_SECRET          = 'dfb1163f-3eb4-431c-be2a-8d0ef6bae264'
+
+# Add email to requested authorizations.
+LINKEDIN_SCOPE = ['r_basicprofile', 'r_emailaddress']
+# Add the fields so they will be requested from linkedin.
+LINKEDIN_EXTRA_FIELD_SELECTORS = ['email-address', 'headline', 'industry']
+# Arrange to add the fields to UserSocialAuth.extra_data
+LINKEDIN_EXTRA_DATA = [('id', 'id'),
+                       ('first-name', 'first_name'),
+                       ('last-name', 'last_name'),
+                       ('email-address', 'email_address'),
+                       ('headline', 'headline'),
+                       ('industry', 'industry')]
+
 
 LOGIN_URL          = '/login-form/'
 LOGIN_REDIRECT_URL = '/logged-in/'

@@ -29,6 +29,17 @@
                                 </span>
                                 <span class="text">Sign in with Google Account</span>
                             </a>
+                            <div class="division">
+                                <hr class="left">
+                                <span>or</span>
+                                <hr class="right">
+                            </div>
+                            <a class="face_login" href="{% url socialauth_begin 'linkedin' %}">
+                                <span class="face_icon">
+                                    <img src="{{ STATIC_URL }}theme/img/i_face.png" alt="fb">
+                                </span>
+                                <span class="text">Sign in with Linkedin</span>
+                            </a>
                         </div>
                     </div>
                 </div>
