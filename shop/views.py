@@ -9,6 +9,9 @@ from django.http import HttpResponse, HttpResponseNotFound
 def index(request):
     return render_to_response('shop/index.html', {}, context_instance=RequestContext(request))
 
+def login(request):
+    return render_to_response('shop/login.html', {}, context_instance=RequestContext(request))
+
 
 def create(request):
     if request.method == 'POST':

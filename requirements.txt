@@ -7,7 +7,6 @@ django-classy-tags
 django-autoslug
 django-debug-toolbar
 django-bootstrap-toolkit
-django-registration
 django-social-auth
 django-celery
 django-celery-with-mongodb

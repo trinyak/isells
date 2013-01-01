@@ -118,6 +118,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 CMS_TEMPLATES = (
     ('base.html', 'Example Template'),
     ('coming-soon.html', 'Coming soon'),
+    ('features.html', 'Features'),
     ('pricing.html', 'Pricing'),
     ('contact-us.html', 'Contact us'),
     )
@@ -151,7 +152,6 @@ INSTALLED_APPS = (
     'cms.plugins.googlemap',
     'sekizai',
     'theme',
-    'registration',
     'djcelery',
     'social_auth',
     'shop'

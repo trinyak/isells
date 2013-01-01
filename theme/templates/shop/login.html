@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Log in{% endblock %}
+
+{% block content %}
+    <div id="box_login">
+        <div class="container">
+            <div class="span12 box_wrapper">
+                <div class="span12 box">
+                    <div>
+                        <div class="head">
+                            <h4>Get access to your account</h4>
+                        </div>
+                        <div class="social">
+                            <a class="face_login" href="{% url socialauth_begin 'facebook' %}">
+                                <span class="face_icon">
+                                    <img src="{{ STATIC_URL }}theme/img/i_face.png" alt="fb">
+                                </span>
+                                <span class="text">Sign in with Facebook</span>
+                            </a>
+                            <div class="division">
+                                <hr class="left">
+                                <span>or</span>
+                                <hr class="right">
+                            </div>
+                            <a class="face_login" href="{% url socialauth_begin 'google-oauth2' %}">
+                                <span class="face_icon">
+                                    <img src="{{ STATIC_URL }}theme/img/i_face.png" alt="fb">
+                                </span>
+                                <span class="text">Sign in with Google Account</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block footer %}{% endblock %}
