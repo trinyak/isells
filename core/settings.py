@@ -158,8 +158,6 @@ INSTALLED_APPS = (
     'shop'
     )
 
-REGISTRATION_OPEN = True
-
 AUTHENTICATION_BACKENDS = (
     'social_auth.backends.facebook.FacebookBackend',
     'social_auth.backends.google.GoogleOAuth2Backend',
