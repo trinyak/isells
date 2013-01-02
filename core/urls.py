@@ -7,7 +7,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'', include('social_auth.urls')),
-    url(r'^login/$', redirect_to, {'url': '/login/github'}),
+    url(r'^logout/$','django.contrib.auth.views.logout', kwargs={'next_page':'/'}, name="logout"),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': {'cmspages': CMSSitemap}}),
     url(r'^shop/', include('shop.urls')),
