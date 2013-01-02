@@ -140,6 +140,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.staticfiles',
     'django.contrib.sitemaps',
+    'django.contrib.auth',
     'cms',
     'menus',
     'mptt',
@@ -160,12 +161,13 @@ INSTALLED_APPS = (
 REGISTRATION_OPEN = True
 
 AUTHENTICATION_BACKENDS = (
+    'social_auth.backends.facebook.FacebookBackend',
     'social_auth.backends.google.GoogleOAuth2Backend',
     'social_auth.backends.contrib.linkedin.LinkedinBackend',
     'django.contrib.auth.backends.ModelBackend',
 )
 
-SOCIAL_AUTH_ENABLED_BACKENDS = ('google-oauth2', 'linkedin')
+SOCIAL_AUTH_ENABLED_BACKENDS = ('google-oauth2', 'linkedin', 'facebook')
 
 GOOGLE_OAUTH2_CLIENT_ID      = '947818718224.apps.googleusercontent.com'
 GOOGLE_OAUTH2_CLIENT_SECRET  = '70DLvY2X491gnztPMCJumMvU'
@@ -186,6 +188,11 @@ LINKEDIN_EXTRA_DATA = [('id', 'id'),
                        ('headline', 'headline'),
                        ('industry', 'industry')]
 
+FACEBOOK_APP_ID = '472811032776847'
+FACEBOOK_API_SECRET = 'bcf537a4d25bdcc44d75ee65fab9bd4c'
+
+FACEBOOK_EXTENDED_PERMISSIONS = ['email']
+FACEBOOK_EXTENDED_PERMISSIONS = ['email']
 
 LOGIN_URL          = '/login-form/'
 LOGIN_REDIRECT_URL = '/logged-in/'

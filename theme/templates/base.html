@@ -31,7 +31,22 @@
             <div class="nav-collapse collapse">
                 <ul class="nav pull-right">
                     {% show_menu 0 100 1 1 "top-menu.html" %}
-                    <li><a class="btn-header" href="/shop/login">Sign in</a></li>
+
+                    {% if user.is_authenticated %}
+                        <li class="dropdown">
+                            <a href="/external-pages/" class="dropdown-toggle" data-toggle="dropdown">
+                               [ {{ user.first_name }} {{ user.last_name }} ]
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="">
+                                    <a href="{% url django.contrib.auth.views.logout %}">Logout</a>
+                                </li>
+                            </ul>
+                        </li>
+                    {% else %}
+                        <li><a class="btn-header" href="/shop/login">Sign in</a></li>
+                    {% endif %}
                 </ul>
             </div>
         </div>

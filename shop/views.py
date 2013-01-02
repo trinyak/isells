@@ -5,14 +5,18 @@ from shop.forms import WebsiteForm
 from shop.models import Website
 from shop.tasks import addWebsite
 from django.http import HttpResponse, HttpResponseNotFound
-
-def index(request):
-    return render_to_response('shop/index.html', {}, context_instance=RequestContext(request))
+from django.contrib.auth.decorators import login_required
 
 def login(request):
     return render_to_response('shop/login.html', {}, context_instance=RequestContext(request))
 
 
+@login_required
+def index(request):
+    return render_to_response('shop/index.html', {}, context_instance=RequestContext(request))
+
+
+@login_required
 def create(request):
     if request.method == 'POST':
         form = WebsiteForm(request.POST) # A form bound to the POST data
@@ -38,12 +42,12 @@ def create(request):
 
     return render_to_response('shop/create.html', {'form': form}, context_instance=RequestContext(request))
 
-
+@login_required
 def wait(request, site_id):
     site = Website.objects.get(pk=site_id)
     return render_to_response('shop/wait.html', {'site': site}, context_instance=RequestContext(request))
 
-
+@login_required
 def check_status(request, site_id):
     site = Website.objects.get(pk=site_id)
 
